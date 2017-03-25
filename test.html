@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TEST</title>
+</head>
+<body>
+<h1> THE HIGHEST NUMBER IS <p id="top"></p></h1>
+<h1> THE LOWEST NUMBER IS <p id="base"></p></h1>
+<script type="text/javascript">
+  var array = [1, 3, 5, 7, 9];
+  array.sort(function(a, b){
+    return b - a;
+  })
+  document.getElementById("top").innerHTML = array[0];
+  array.sort(function(a, b){
+    return b - a;
+  })
+  document.getElementById("base").innerHTML = array[4];
+
+  
+</script>
+</body>
+</html>
